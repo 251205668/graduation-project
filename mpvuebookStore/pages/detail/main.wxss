@@ -1,0 +1,184 @@
+@import "../../common/vendor.wxss";
+
+.detail-desc.data-v-7773fd2f {
+  margin: 32rpx 43rpx 0 40rpx;
+  display: flex;
+}
+.detail-desc .img-wrapper.data-v-7773fd2f {
+  flex: 0 0 216rpx;
+  width: 216rpx;
+}
+.detail-desc .desc.data-v-7773fd2f {
+  flex: 1;
+  margin-left: 43rpx;
+  display: flex;
+  flex-direction: column;
+}
+.detail-desc .desc .title.data-v-7773fd2f {
+  font-size: 36rpx;
+  color: #333;
+  font-weight: 600;
+  line-height: 64rpx;
+  margin-top: 20rpx;
+  max-width: 420rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.detail-desc .desc .author.data-v-7773fd2f {
+  font-size: 32rpx;
+  margin-top: 12rpx;
+  color: #333;
+  max-width: 410rpx;
+  line-height: 45rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.detail-desc .desc .sub-title.data-v-7773fd2f {
+  font-size: 28rpx;
+  line-height: 40rpx;
+  margin-top: 24rpx;
+  color: #868686;
+  max-width: 410rpx;
+  max-height: 88rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.detail-count.data-v-2fd9aa9a {
+  margin: 29rpx 40rpx 0 43rpx;
+}
+.detail-count .book-info.data-v-2fd9aa9a {
+  display: flex;
+  justify-content: space-between;
+}
+.detail-count .book-info .left.data-v-2fd9aa9a {
+  display: flex;
+  flex-direction: column;
+}
+.detail-count .book-info .left .stars-score.data-v-2fd9aa9a {
+  display: flex;
+}
+.detail-count .book-info .left .stars-score .score.data-v-2fd9aa9a {
+  font-size: 48rpx;
+  color: #5e5e5e;
+  line-height: 67rpx;
+}
+.detail-count .book-info .left .stars-score .rate.data-v-2fd9aa9a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 18rpx;
+}
+.detail-count .book-info .left .components.data-v-2fd9aa9a {
+  margin-top: 22rpx;
+  font-size: 22rpx;
+  color: #99a0aa;
+  line-height: 28rpx;
+}
+.detail-count .book-info .right.data-v-2fd9aa9a {
+  display: flex;
+  flex-direction: column;
+  padding-left: 80rpx;
+}
+.detail-count .book-info .right .readBook-count.data-v-2fd9aa9a {
+  display: flex;
+}
+.detail-count .book-info .right .readBook-count .text.data-v-2fd9aa9a {
+  font-size: 22rpx;
+  color: #99a0aa;
+  line-height: 28rpx;
+  display: inline-flex;
+  margin-top: 18rpx;
+  margin-left: 6rpx;
+}
+.detail-count .book-info .right .readBook-count .count.data-v-2fd9aa9a {
+  font-size: 48rpx;
+  color: #5e5e5e;
+  line-height: 67rpx;
+}
+.detail-count .book-info .right .avatar-group.data-v-2fd9aa9a {
+  margin-top: 12rpx;
+  display: flex;
+  max-width: 324rpx;
+  overflow: hidden;
+  flex-flow: row nowrap;
+}
+.detail-count .book-info .right .avatar-group .readers-avatar.data-v-2fd9aa9a {
+  width: 40rpx;
+  height: 40rpx;
+}
+.detail-count .touch-rate.data-v-2fd9aa9a {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8rpx;
+}
+.detail-count .touch-rate .title.data-v-2fd9aa9a {
+  font-size: 24rpx;
+  color: #99a0aa;
+  line-height: 28rpx;
+  margin-top: 26rpx;
+}
+.detail-bottom.data-v-513bf963 {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 120rpx;
+  background: #fff;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 0 30rpx;
+  border-top: 2rpx solid #eee;
+  box-shadow: 0 -4rpx 8rpx 0 rgba(0,0,0,0.1);
+}
+.detail-bottom .btn-wrapper.data-v-513bf963 {
+  flex: 1;
+  margin-right: 30rpx;
+}
+.detail-bottom .exit {
+  width: 100%;
+  color: #1ea3f5;
+  background: #fff;
+  border: 2rpx solid #1ea3f5;
+  border-radius: 45rpx;
+}
+.detail-bottom .Notexit {
+  width: 100%;
+  color: #f96128;
+  background: rgba(255,175,155,0.3);
+  border: 2rpx solid #ffaf9b;
+  border-radius: 45rpx;
+}
+.detail-bottom .read {
+  width: 100%;
+  border: none;
+  color: #fff;
+  background: #1ea3f5;
+  border-radius: 45rpx;
+}
+.detail-contents-wrapper.data-v-8402001a {
+  padding: 0 40rpx 120rpx 30rpx;
+  margin-top: 40rpx;
+}
+.detail-contents-wrapper .detail-contents-title.data-v-8402001a {
+  font-size: 44rpx;
+  font-weight: 600;
+  border-top: 2rpx solid #ebebeb;
+  color: #333;
+}
+.detail-contents-wrapper .detail-contents.data-v-8402001a {
+  padding: 40rpx 30rpx 40rpx 0;
+  border-bottom: 2rpx solid #ebebeb;
+}
+.detail-contents-wrapper .detail-contents.data-v-8402001a:last-child {
+  border-bottom: none;
+}
+.detail-contents-wrapper .detail-contents .detail-contents-label.data-v-8402001a {
+  font-size: 30rpx;
+  color: #868686;
+  line-height: 36rpx;
+  max-height: 36rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

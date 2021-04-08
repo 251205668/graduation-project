@@ -1,0 +1,31 @@
+<template name="2e00af79">
+  <view class="_div data-v-2fd9aa9a detail-count">
+    <view class="_div data-v-2fd9aa9a book-info">
+      <view class="_div data-v-2fd9aa9a left">
+        <view class="_div data-v-2fd9aa9a stars-score">
+          <view class="_div data-v-2fd9aa9a score">{{rankAvg}}</view>
+          <view class="_div data-v-2fd9aa9a rate">
+            <van-rate value="{{rankAvg}}" size="{{16}}" color="#e74c3c" void-color="#DEE0E2" void-icon="star" readonly="true" class="_van-rate data-v-2fd9aa9a"></van-rate>
+          </view>
+        </view>
+        <view class="_div data-v-2fd9aa9a components">
+          {{rankNum}}人点评
+        </view>
+      </view>
+      <view class="_div data-v-2fd9aa9a right">
+        <view class="_div data-v-2fd9aa9a readBook-count"><label class="_span data-v-2fd9aa9a count">{{readerNum}}</label><label class="_span data-v-2fd9aa9a text">人在此读书</label></view>
+        <view class="_div data-v-2fd9aa9a avatar-group">
+          <view class="_div data-v-2fd9aa9a readers-avatar" wx:key="index" key="{{index}}" wx:for="{{reader}}" wx:for-index="index" wx:for-item="item">
+            <van-image round lazy-load width="20" height="20" fit="cover" src="{{item.avatarUrl}}" class="_van-image data-v-2fd9aa9a"></van-image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-2fd9aa9a touch-rate">
+      <view class="_div data-v-2fd9aa9a title">轻点评分</view>
+      <view class="_div data-v-2fd9aa9a rate-wrapper">
+        <van-rate value="{{rateValue}}" size="{{25}}" color="#1D89EE" void-color="#DEE0E2" void-icon="star" bindchange="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_van-rate data-v-2fd9aa9a"></van-rate>
+      </view>
+    </view>
+  </view>
+</template>

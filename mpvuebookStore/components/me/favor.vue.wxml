@@ -1,0 +1,18 @@
+<template name="26034482">
+  <view class="_div data-v-3515fc69 favor">
+    <view class="_div data-v-3515fc69 title"></view>
+    <view class="_div data-v-3515fc69 content">
+      <view class="_div data-v-3515fc69 content-row" wx:key="index" key="{{index}}" wx:for="{{bookData}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-3515fc69 content-col" wx:key="index1" key="{{index1}}" wx:for="{{item}}" wx:for-index="index1" wx:for-item="book">
+          <view class="_div data-v-3515fc69 book" bindtap="handleProxy" data-eventid="{{'0_'+index+'-'+index1}}" data-comkey="{{$k}}">
+            <van-image width="125" height="152" src="{{book.cover}}" cover="fit" lazy-load class="_van-image data-v-3515fc69"></van-image>
+            <view class="_div data-v-3515fc69 bottom">
+              <view class="_div data-v-3515fc69 book-title">书名:{{book.title}}</view>
+              <view class="_div data-v-3515fc69 author">作者:{{book.author}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

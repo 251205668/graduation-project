@@ -1,0 +1,6 @@
+<import src="/components/Shelf/shelf-header.vue.wxml" />
+<import src="/components/Shelf/shelf-list.vue.wxml" /><template name="30e67cce">
+  <view class="_div data-v-404ca9c1">
+    <view class="_div data-v-404ca9c1 shelf"><template data="{{...$root[$kk+'0'], $root}}" is="480c74ac"></template></view> <template data="{{...$root[$kk+'1'], $root}}" is="7fee207b"></template>
+  </view>
+</template>

@@ -1,0 +1,92 @@
+@import "../../common/vendor.wxss";
+
+.user-info-wrapper.data-v-1c47b157 {
+  margin: 30rpx 50rpx;
+  background: #f8f9fb;
+  border-radius: 24rpx;
+  padding: 30rpx 40rpx;
+  border: 2rpx solid #e0e1e2;
+}
+.user-info-wrapper .user-info.data-v-1c47b157 {
+  position: relative;
+  height: 120rpx;
+  border-bottom: 2rpx solid #e9e9e9;
+}
+.user-info-wrapper .user-info .user-nick-name.data-v-1c47b157 {
+  font-size: 34rpx;
+  font-weight: 500;
+  color: #333;
+}
+.user-info-wrapper .user-info .user-read-time.data-v-1c47b157 {
+  font-size: 24rpx;
+  color: #868686;
+}
+.user-info-wrapper .user-info .user-avatar-wrapper.data-v-1c47b157 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.user-info-wrapper .user-extra.data-v-1c47b157 {
+  margin-top: 30rpx;
+}
+.user-info-wrapper .user-extra .user-extra-text.data-v-1c47b157 {
+  font-size: 24rpx;
+  color: #666;
+  font-weight: 500;
+}
+.shelf-list-wrapper.data-v-57a5d930 {
+  padding: 0 25rpx 40rpx 25rpx;
+}
+.shelf-list-wrapper .shelf-list-inner.data-v-57a5d930 {
+  display: flex;
+  flex-flow: row wrap;
+}
+.shelf-list-wrapper .shelf-list-inner .shelf-book.data-v-57a5d930 {
+  flex: 0 0 33.33%;
+  width: 33.33%;
+  padding: 40rpx 25rpx 0 25rpx;
+  box-sizing: border-box;
+}
+.shelf-list-wrapper .shelf-list-inner .shelf-book .shelf-book-cover.data-v-57a5d930 {
+  width: 100%;
+  height: 260rpx;
+}
+.shelf-list-wrapper .shelf-list-inner .shelf-book .shelf-book-title.data-v-57a5d930 {
+  width: 100%;
+  font-size: 24rpx;
+  color: #333;
+  overflow: hidden;
+  text-overflow: clip;
+  line-height: 28rpx;
+  max-height: 56rpx;
+  margin-top: 20rpx;
+}
+.shelf-list-wrapper .shelf-list-inner .shelf-book .shelf-book-add.data-v-57a5d930 {
+  width: 100%;
+  height: 260rpx;
+  border: 2rpx solid #cbcbcb;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shelf-list-wrapper .shelf-list-inner .shelf-book .shelf-book-add .shelf-book-add-wrapper.data-v-57a5d930 {
+  position: relative;
+  width: 60rpx;
+  height: 60rpx;
+}
+.shelf-list-wrapper .shelf-list-inner .shelf-book .shelf-book-add .shelf-book-add-wrapper .shelf-book-add-x.data-v-57a5d930 {
+  position: absolute;
+  top: 50%;
+  width: 60rpx;
+  height: 4rpx;
+  margin-top: -2rpx;
+  background: #cacaca;
+}
+.shelf-list-wrapper .shelf-list-inner .shelf-book .shelf-book-add .shelf-book-add-wrapper .shelf-book-add-y.data-v-57a5d930 {
+  position: absolute;
+  left: 50%;
+  width: 4rpx;
+  height: 60rpx;
+  background: #cacaca;
+}

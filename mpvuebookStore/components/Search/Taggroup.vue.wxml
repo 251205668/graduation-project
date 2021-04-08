@@ -1,0 +1,11 @@
+<import src="/components/base/tag/tag.vue.wxml" /><template name="7474a301">
+  <view class="_div data-v-bd8d2a8c tag-group">
+    <view class="_div data-v-bd8d2a8c tag-group-header">
+      <view class="_div data-v-bd8d2a8c left-title">{{title}}</view>
+      <view class="_div data-v-bd8d2a8c right-title" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">{{btnText}}</view>
+    </view>
+    <view class="_div data-v-bd8d2a8c tag-group-wrapper">
+      <view class="_div data-v-bd8d2a8c tag-item" wx:key="index" key="{{index}}" wx:for="{{value}}" wx:for-index="index" wx:for-item="item"><template wx:if="{{item.title}}" bindSelectTag="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0_'+index], $root}}" is="edb3db56"></template> <template wx:if="{{!item.title}}" bindSelectTag="handleProxy" data-eventid="{{'2_'+index}}" data-comkey="{{$k}}" data="{{...$root[$kk+'1_'+index], $root}}" is="edb3db56"></template></view>
+    </view>
+  </view>
+</template>

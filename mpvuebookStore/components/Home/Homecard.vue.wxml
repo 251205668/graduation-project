@@ -1,0 +1,32 @@
+<template name="d2166518">
+  <view class="_div data-v-5a9512a6 homecard">
+    <view class="_div data-v-5a9512a6 homecard-wrapper">
+      <view class="_div data-v-5a9512a6 user-info">
+        <view class="_div data-v-5a9512a6 avatar" wx:if="{{loginflag}}">
+          <image src="{{avatar}}" style="border-radius:50%;width:20px;height:20px" class="_image data-v-5a9512a6"></image>
+        </view>
+        <view class="_div data-v-5a9512a6 avatar" wx:if="{{!loginflag}}">
+          <image src="https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif?imageView2/1/w/80/h/80" style="border-radius:50%;width:20px;height:20px" class="_image data-v-5a9512a6"></image>
+        </view> <label wx:if="{{loginflag}}" class="_span data-v-5a9512a6 nickName">{{nickName}}</label><label wx:else class="_span data-v-5a9512a6 nickName">游客登录</label> <label class="_span data-v-5a9512a6 shelf-desc" wx:if="{{loginflag}}">书架共有三本好书</label><label class="_span data-v-5a9512a6 shelf-desc" wx:else>亲亲需要您登录哦</label>
+        <view class="_div data-v-5a9512a6 split"></view> <label class="_span data-v-5a9512a6 shelf-desc right">特别精选</label>
+      </view>
+      <view class="_div data-v-5a9512a6 book-info">
+        <view class="_div data-v-5a9512a6 book-img-wrapper" wx:if="{{loginflag}}">
+          <view bindtap="handleProxy" class="_div data-v-5a9512a6 img-wrapper" wx:key="index" key="{{index}}" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{shelf}}" wx:for-index="index" wx:for-item="item">
+            <van-image fit="cover" width="72" height="101" lazy-load src="{{item.cover}}" class="_van-image data-v-5a9512a6"></van-image>
+          </view>
+        </view>
+        <view class="_div data-v-5a9512a6 book-img-wrapper" wx:else>
+          <view bindtap="handleProxy" class="_div data-v-5a9512a6 img-wrapper" wx:key="index" key="{{index}}" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" wx:for="{{mockshelflist}}" wx:for-index="index" wx:for-item="item">
+            <van-image fit="cover" width="72" height="101" lazy-load src="{{item.cover}}" class="_van-image data-v-5a9512a6"></van-image>
+          </view>
+        </view>
+        <view class="_div data-v-5a9512a6 book-shelf" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}"><label class="_span data-v-5a9512a6 title">书架</label>
+          <l-icon class="_l-icon data-v-5a9512a6 icon" name="right" size="24" color="#ccc"></l-icon>
+        </view>
+      </view>
+      <view class="_div data-v-5a9512a6 feedback-wrapper" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}"> 反馈 </view>
+    </view>
+    <l-message content="content" class="_l-message data-v-5a9512a6"></l-message>
+  </view>
+</template>

@@ -1,0 +1,55 @@
+@import "../../common/vendor.wxss";
+
+.search-list.data-v-2d6ed848 {
+  position: relative;
+}
+.search-list .search-list-wrapper.data-v-2d6ed848 {
+  padding: 32rpx;
+}
+.search-list .search-list-wrapper .search-table.data-v-2d6ed848 {
+  display: flex;
+  margin-top: 57rpx;
+}
+.search-list .search-list-wrapper .search-table .image-wrapper.data-v-2d6ed848 {
+  width: 94rpx;
+  height: 137rpx;
+  margin-right: 31rpx;
+}
+.search-list .search-list-wrapper .search-table .book-desc.data-v-2d6ed848 {
+  display: flex;
+  vertical-align: top;
+  flex-direction: column;
+}
+.search-list .search-list-wrapper .search-table .book-desc .title.data-v-2d6ed848 {
+  font-size: 32rpx;
+  color: #333;
+  line-height: 52rpx;
+  max-width: 480rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.search-list .search-list-wrapper .search-table .book-desc .author.data-v-2d6ed848 {
+  font-size: 26rpx;
+  margin-top: 8rpx;
+  max-width: 400rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: rgba(0,0,0,0.65);
+  line-height: 36rpx;
+}
+.search-list .search-list-wrapper .search-table .book-desc .cate.data-v-2d6ed848 {
+  font-size: 26rpx;
+  margin-top: 4rpx;
+  color: rgba(0,0,0,0.45);
+  line-height: 36rpx;
+}
+.search-list .loading.data-v-2d6ed848 {
+  position: absolute;
+  width: 100%;
+  z-index: 10000;
+  background: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+}

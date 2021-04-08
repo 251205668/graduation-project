@@ -1,0 +1,57 @@
+<template name="277735b4">
+  <view class="_div data-v-fcee8166">
+    <form action class="_form data-v-fcee8166">
+      <view class="_view data-v-fcee8166 cu-bar justify-center bg-white">
+        <view class="_view data-v-fcee8166 action border-title"><text class="_text data-v-fcee8166 text-xl text-bold">用户信息</text> <text class="_text data-v-fcee8166 bg-grey" style="width:2rem"></text></view>
+      </view>
+      <view class="_view data-v-fcee8166 cu-form-group">
+        <view class="_view data-v-fcee8166 title">教师姓名</view> <input placeholder="请输入姓名" name="input" class="_input data-v-fcee8166" /> <text class="_text data-v-fcee8166 cuIcon-addressbook text-blue"></text>
+      </view>
+      <view class="_view data-v-fcee8166 cu-form-group">
+        <view class="_view data-v-fcee8166 title">邮箱</view> <input placeholder="请输入邮箱" name="input" class="_input data-v-fcee8166" /> <text class="_text data-v-fcee8166 cuIcon-form text-blue"></text>
+      </view>
+      <view class="_view data-v-fcee8166 cu-form-group">
+        <view class="_view data-v-fcee8166 title">手机号码</view> <input placeholder="请输入手机号码" name="input" class="_input data-v-fcee8166" />
+        <view class="_view data-v-fcee8166 cu-capsule radius">
+          <view class="_view data-v-fcee8166 cu-tag bg-blue "> +86 </view>
+          <view class="_view data-v-fcee8166 cu-tag line-blue"> 中国大陆 </view>
+        </view>
+      </view>
+      <view class="_view data-v-fcee8166 cu-form-group">
+        <view class="_view data-v-fcee8166 title">选择学院</view>
+        <picker bindchange="handleProxy" value="{{index}}" range="{{picker1}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_picker data-v-fcee8166">
+          <view class="_view data-v-fcee8166 picker">
+            {{index>-1?picker1[index]:'添加的学院会动态提交到服务器'}}
+          </view>
+        </picker>
+      </view>
+      <view class="_view data-v-fcee8166 cu-form-group">
+        <view class="_view data-v-fcee8166 title">选择班级</view>
+        <picker bindchange="handleProxy" value="{{index2}}" range="{{picker2}}" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_picker data-v-fcee8166">
+          <view class="_view data-v-fcee8166 picker">
+            {{index2>-1?picker2[index2]:'选择班级后关联更佳'}}
+          </view>
+        </picker>
+      </view>
+      <view class="_view data-v-fcee8166 cu-bar justify-center bg-white margin-top">
+        <view class="_view data-v-fcee8166 action border-title"><text class="_text data-v-fcee8166 text-xl text-bold">添加图书</text> <text class="_text data-v-fcee8166 bg-grey" style="width:2rem"></text></view>
+      </view>
+      <view class="_div data-v-fcee8166 book-info ">
+        <view class="_view data-v-fcee8166 cu-form-group">
+          <view class="_view data-v-fcee8166 title">书籍名称</view> <input placeholder="请输入姓名" name="input" class="_input data-v-fcee8166" /> <text class="_text data-v-fcee8166 cuIcon-read text-blue"></text>
+        </view>
+        <view class="_view data-v-fcee8166 cu-form-group">
+          <view class="_view data-v-fcee8166 title">作者</view> <input placeholder="请输入姓名" name="input" class="_input data-v-fcee8166" /> <text class="_text data-v-fcee8166 cuIcon-peoplefill text-blue"></text>
+        </view>
+        <view class="_view data-v-fcee8166 cu-form-group margin-top"><textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="handleProxy" placeholder="请输入书籍简介" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_textarea data-v-fcee8166" /></view> <label class="_span data-v-fcee8166 text-gray margin-top" style="padding-left:10px;font-size:13px">上传文件</label>
+        <view class="_div data-v-fcee8166 file-wrapper bg-white">
+          <l-image-picker count="3" bindlinchange="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_l-image-picker data-v-fcee8166"></l-image-picker>
+        </view>
+      </view>
+    </form>
+    <view class="_div data-v-fcee8166 button-wrapper">
+      <l-button bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_l-button data-v-fcee8166">提交</l-button>
+    </view>
+    <l-message content="content" class="_l-message data-v-fcee8166"></l-message>
+  </view>
+</template>

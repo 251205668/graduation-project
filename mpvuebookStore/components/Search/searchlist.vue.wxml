@@ -1,0 +1,16 @@
+<template name="73889882">
+  <view class="_div data-v-fb8b540a search-list">
+    <view class="_div data-v-fb8b540a search-list-wrapper">
+      <view class="_div data-v-fb8b540a search-table" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{data}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-fb8b540a image-wrapper">
+          <van-image width="47" height="68.5" lazy-load fit="cover" src="{{item.cover}}" class="_van-image data-v-fb8b540a"></van-image>
+        </view>
+        <view class="_div data-v-fb8b540a book-desc">
+          <view class="_div data-v-fb8b540a title">{{item.title}}</view>
+          <view class="_div data-v-fb8b540a author">{{item.author}}</view>
+          <view class="_div data-v-fb8b540a cate">{{item.categoryText}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

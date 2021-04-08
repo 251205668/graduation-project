@@ -1,0 +1,6 @@
+<template name="ea77cf8e">
+  <view class="_div data-v-4fee4633 image-view" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+    <image src="{{src}}" mode="{{mode}}" lazy-load="{{lazyLoad}}" binderror="handleProxy" bindload="handleProxy" hidden="{{!(!isLoading)}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_img data-v-4fee4633 {{round ? ' round image' : 'image'}}" style=" {{('height:' + height + ';')}}"></image>
+    <image src="/static/images/user.png" mode="{{mode}}" lazy-load="{{lazyLoad}}" binderror="handleProxy" bindload="handleProxy" hidden="{{!(isLoading || error)}}" wx:if="{{mpvuePlatform === 'wx'}}" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_img data-v-4fee4633 {{round ? ' round image' : 'image'}}" style=" {{('height:' + height + ';')}}"></image>
+  </view>
+</template>

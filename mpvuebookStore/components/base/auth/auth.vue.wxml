@@ -1,0 +1,11 @@
+<import src="/components/base/image-view/image-view.vue.wxml" /><template name="35db7219">
+  <view class="_div data-v-62286cd3 auth">
+    <view class="_div data-v-62286cd3 dialog">
+      <view class="_div data-v-62286cd3 info">
+        <view class="_div data-v-62286cd3 image-wrapper"><template src="https://i.loli.net/2020/02/07/6TiVX1GcpwE8tJv.jpg" round data="{{...$root[$kk+'0'], $root}}" is="ea77cf8e"></template></view>
+        <view class="_div data-v-62286cd3 sub-title">登陆东理悦读</view>
+        <view class="_div data-v-62286cd3 desc">更多好书等你阅读</view>
+      </view> <button class="_button data-v-62286cd3 login-button" bindgetuserinfo="handleProxy" open-type="getUserInfo" data-eventid="{{'0'}}" data-comkey="{{$k}}">授权登录</button> <button bindtap="handleProxy" class="_button data-v-62286cd3 cancel-button" data-eventid="{{'1'}}" data-comkey="{{$k}}">取消登录</button>
+    </view>
+  </view>
+</template>

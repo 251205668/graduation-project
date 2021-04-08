@@ -1,0 +1,18 @@
+<template name="7fee207b">
+  <view class="_div data-v-57a5d930 shelf-list-wrapper">
+    <view class="_div data-v-57a5d930 shelf-list-inner">
+      <view class="_div data-v-57a5d930 shelf-book" wx:key="book.fileName" key="{{book.fileName}}" wx:for="{{shelfList}}" wx:for-index="index" wx:for-item="book">
+        <view class="_div data-v-57a5d930 shelf-book-cover" wx:if="{{book && book.cover}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}">
+          <van-image src="{{book.cover}}" fit="cover" width="89" height="128" lazy-load class="_van-image data-v-57a5d930"></van-image>
+        </view>
+        <view class="_div data-v-57a5d930 shelf-book-title" wx:if="{{book && book.title}}">{{book.title}}</view>
+        <view class="_div data-v-57a5d930 shelf-book-add" wx:if="{{!book.title}}" bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}">
+          <view class="_div data-v-57a5d930 shelf-book-add-wrapper">
+            <view class="_div data-v-57a5d930 shelf-book-add-x"></view>
+            <view class="_div data-v-57a5d930 shelf-book-add-y"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

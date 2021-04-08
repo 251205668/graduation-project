@@ -1,0 +1,10 @@
+<template name="9108058e">
+  <view class="_div data-v-8402001a detail-contents-wrapper" wx:if="{{contents}}">
+    <view class="_div data-v-8402001a detail-contents-title">目录</view>
+    <view class="_div data-v-8402001a detail-contents" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{contents}}" wx:for-index="index" wx:for-item="item">
+      <view class="_div data-v-8402001a detail-contents-label" style=" {{('margin-left:' + (15 * item.level + 'px') + ';')}}">
+        {{item.label}}
+      </view>
+    </view>
+  </view>
+</template>

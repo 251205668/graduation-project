@@ -1,0 +1,6 @@
+@import "../../common/vendor.wxss";
+
+.button-wrapper.data-v-fcee8166 {
+  padding-left: 20rpx;
+  margin-top: 20rpx;
+}

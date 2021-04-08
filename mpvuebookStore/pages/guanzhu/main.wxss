@@ -1,0 +1,12 @@
+@import "../../common/vendor.wxss";
+
+.page {
+  height: 100Vh;
+  width: 100vw;
+}
+.item {
+  flex: 0 0 50%;
+  line-height: 154rpx;
+  text-align: center;
+  height: 154rpx;
+}

@@ -1,0 +1,84 @@
+<template name="44a22e76">
+  <view class="_div data-v-6547dae6">
+    <view class="_div data-v-6547dae6 player">
+      <view class="_div data-v-6547dae6 normal-player" style=" {{['top:' + (CustomBar + 'px') + ';']}}">
+        <view class="_div data-v-6547dae6 background">
+          <view class="_div data-v-6547dae6 img-wrapper" wx:if="{{currentSong.id}}">
+            <image width="100%" height="100%" src="{{currentSong.picUrl}}" class="_img data-v-6547dae6"></image>
+          </view>
+          <view class="_div data-v-6547dae6 img-wrapper" wx:else>
+            <image width="100%" height="100%" src="https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif?imageView2/1/w/80/h/80" class="_img data-v-6547dae6"></image>
+          </view>
+        </view>
+        <view wx:if="{{currentSong.id}}" class="_div data-v-6547dae6 top">
+          <view class="_h1 data-v-6547dae6 title">
+            {{currentSong.name}}
+          </view>
+          <view class="_h2 data-v-6547dae6 subtitle">{{currentSong.singer}}</view>
+        </view>
+        <view wx:else class="_div data-v-6547dae6 top">
+          <view class="_h1 data-v-6547dae6 title"> 悦读音乐 </view>
+          <view class="_h2 data-v-6547dae6 subtitle">读书与音乐更配哦</view>
+        </view>
+        <view class="_div data-v-6547dae6 middle">
+          <view class="_div data-v-6547dae6 middle-l" ref="middleL">
+            <view class="_div data-v-6547dae6 cd-wrapper" ref="cdWrapper">
+              <view wx:if="{{currentSong.id}}" class="_div data-v-6547dae6 cd {{cdCLs}}">
+                <image class="_img data-v-6547dae6 image" src="{{currentSong.picUrl}}" alt></image>
+              </view>
+              <view wx:else class="_div data-v-6547dae6 cd {{cdCLs}}">
+                <image class="_img data-v-6547dae6 image" src="https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif?imageView2/1/w/80/h/80" alt></image>
+              </view>
+              <view class="_div data-v-6547dae6 play-lyric-wrapper">
+                <view class="_div data-v-6547dae6 playing-lyric" style="color:#bdc3c7"> 歌词功能即将上线 </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="_div data-v-6547dae6 bottom">
+          <view class="_div data-v-6547dae6 progress-wrapper"><label class="_span data-v-6547dae6 time time-l">{{current}}</label>
+            <view class="_div data-v-6547dae6 progress-bar-wrapper">
+              <van-slider bar-height="4px" max="{{duration}}" active-color="#34495e" inactive-color="#7f8c8d" value="{{time}}" binddrag="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_van-slider data-v-6547dae6"></van-slider>
+            </view> <label class="_span data-v-6547dae6 time time-r">{{durationTime}}</label>
+          </view>
+          <view class="_div data-v-6547dae6 operators">
+            <view class="_div data-v-6547dae6 icon i-left">
+              <view style="font-size:30px" class="_i data-v-6547dae6 iconfont {{iconMode}}" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"></view>
+            </view>
+            <view class="_div data-v-6547dae6 icon i-left">
+              <view bindtap="handleProxy" class="_i data-v-6547dae6 iconfont iconshangyishou" data-eventid="{{'2'}}" data-comkey="{{$k}}"></view>
+            </view>
+            <view bindtap="handleProxy" class="_div data-v-6547dae6 icon i-center" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+              <view class="_i data-v-6547dae6 iconfont {{playIcon}}"></view>
+            </view>
+            <view class="_div data-v-6547dae6 icon i-right">
+              <view bindtap="handleProxy" class="_i data-v-6547dae6 iconfont iconxiayishou" data-eventid="{{'4'}}" data-comkey="{{$k}}"></view>
+            </view>
+            <view class="_div data-v-6547dae6 icon i-right" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}">
+              <view style="font-size:30px" class="_i data-v-6547dae6 iconfont iconbofangliebiao"></view>
+            </view>
+          </view>
+        </view>
+        <van-popup show="{{show}}" round position="bottom" custom-style="height: 60%;" bindclose="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}" class="_van-popup data-v-6547dae6">
+          <view class="_div data-v-6547dae6 list-wrapper wrapper">
+            <view class="_div data-v-6547dae6 title" style="padding-left:15px"> 播放列表{{recommendlist.length}}
+            </view>
+            <view class="_div data-v-6547dae6 cu-list menu-avatar">
+              <view bindtap="handleProxy" class="_div data-v-6547dae6 cu-item {{modalName == 'move-box-' + index ? 'move-cur' : ''}}" wx:key="index" key="{{index}}" data-target="{{'move-box-' + index}}" data-eventid="{{'6_'+index}}" data-comkey="{{$k}}" wx:for="{{recommendlist}}" wx:for-index="index" wx:for-item="item">
+                <view class="_div data-v-6547dae6 cu-avatar round lg" style=" {{['background-image:' + ('url(' + item.al.picUrl + ')') + ';']}}"></view>
+                <view class="_div data-v-6547dae6 content">
+                  <view class="_div data-v-6547dae6 text-white text-lg">{{item.name}}</view>
+                  <view class="_div data-v-6547dae6 text-white text-df"><text class="_text data-v-6547dae6 cuIcon-profile text-blue  margin-right-xs"></text> {{item.ar[0].name}}</view>
+                </view>
+                <view class="_div data-v-6547dae6 action">
+                  <view class="_div data-v-6547dae6 text-gray text-sm">{{item.al.name}}</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </van-popup>
+        <van-toast id="van-toast" class="_van-toast data-v-6547dae6"></van-toast>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,83 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/type/main",
+    "pages/Search/main",
+    "pages/shell/main",
+    "pages/me/main",
+    "pages/detail/main",
+    "pages/Booklist/main",
+    "pages/about/main",
+    "pages/log/main",
+    "pages/attention/main",
+    "pages/donate/main",
+    "pages/book/main",
+    "pages/favor/main",
+    "pages/guanzhu/main",
+    "pages/honor/main",
+    "pages/music/main",
+    "pages/teacher/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "东理悦读",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+  "l-icon": "/miniprogram_npm/lin-ui/icon/index",
+  "l-button": "/miniprogram_npm/lin-ui/button/index",
+  "van-dialog": "/miniprogram_npm/@vant/weapp/dialog/index",
+  "l-loadmore": "/miniprogram_npm/lin-ui/loadmore/index",
+  "l-loading": "/miniprogram_npm/lin-ui/loading/index",
+  "van-image": "/miniprogram_npm/@vant/weapp/image/index",
+  "van-loading": "/miniprogram_npm/@vant/weapp/loading/index",
+  "van-icon": "/miniprogram_npm/@vant/weapp/icon/index",
+  "van-rate": "/miniprogram_npm/@vant/weapp/rate/index",
+  "l-message": "/miniprogram_npm/lin-ui/message/index",
+  "van-popup": "/miniprogram_npm/@vant/weapp/popup/index",
+  "van-toast": "/miniprogram_npm/@vant/weapp/toast/index",
+  "l-toast": "/miniprogram_npm/lin-ui/toast/index",
+  "l-image-picker": "/miniprogram_npm/lin-ui/image-picker/index",
+  "van-collapse": "/miniprogram_npm/@vant/weapp/collapse/index",
+  "van-collapse-item": "/miniprogram_npm/@vant/weapp/collapse-item/index",
+  "van-slider": "/miniprogram_npm/@vant/weapp/slider/index"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "backgroundColor": "#fafafa",
+    "selectedColor": "#13227a",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/main",
+        "iconPath": "static/tabs/N-Home.png",
+        "selectedIconPath": "static/tabs/S-Home.png"
+      },
+      {
+        "text": "分类",
+        "pagePath": "pages/type/main",
+        "iconPath": "static/tabs/N-Type.png",
+        "selectedIconPath": "static/tabs/S-Type.png"
+      },
+      {
+        "text": "书架",
+        "pagePath": "pages/shell/main",
+        "iconPath": "static/tabs/N-Shell.png",
+        "selectedIconPath": "static/tabs/S-Shell.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/me/main",
+        "iconPath": "static/tabs/N-Me.png",
+        "selectedIconPath": "static/tabs/S-Me.png"
+      }
+    ],
+    "position": "bottom",
+    "requiredBackgroundModes": [
+      "audio"
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

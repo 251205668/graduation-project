@@ -1,0 +1,88 @@
+<template name="41347188">
+  <view class="_view data-v-1cdc11a2 cu-timeline">
+    <view class="_view data-v-1cdc11a2 cu-item text-cyan">
+      <view class="_view data-v-1cdc11a2 bg-cyan content shadow">
+        <view class="_view data-v-1cdc11a2 cu-capsule radius">
+          <view class="_view data-v-1cdc11a2 cu-tag bg-white text-green">v1.0.1</view>
+          <view class="_view data-v-1cdc11a2 cu-tag line-white">2020-2-15</view>
+        </view>
+        <view class="_view data-v-1cdc11a2 margin-top-sm text-content">
+          <view class="_view data-v-1cdc11a2">1.首页搜索栏</view>
+          <view class="_view data-v-1cdc11a2">2.首页免费阅读,换一批</view>
+          <view class="_view data-v-1cdc11a2">3.首页读书卡片</view>
+          <view class="_view data-v-1cdc11a2">4.热门推荐,换一批</view>
+          <view class="_view data-v-1cdc11a2">5.当前最热,换一批</view>
+          <view class="_view data-v-1cdc11a2">6.搜索:分类,作者,出版社,搜索书单列表</view>
+          <view class="_view data-v-1cdc11a2">7.热搜词搜索 历史记录清空</view>
+          <view class="_view data-v-1cdc11a2">8.触底 上拉加载</view>
+          <view class="_view data-v-1cdc11a2">9.收藏图书,移除图书出书架</view>
+          <view class="_view data-v-1cdc11a2">10.图书阅读敬请期待</view>
+          <view class="_view data-v-1cdc11a2">11.更多实用好玩功能敬请期待</view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-1cdc11a2 cu-item text-blue">
+      <view class="_view data-v-1cdc11a2 bg-blue content shadow">
+        <view class="_view data-v-1cdc11a2 cu-capsule radius">
+          <view class="_view data-v-1cdc11a2 cu-tag bg-white text-blue">v1.0.1</view>
+          <view class="_view data-v-1cdc11a2 cu-tag line-white">2020-3-14</view>
+        </view>
+        <view class="_view data-v-1cdc11a2 margin-top-sm text-content">
+          <view class="_view data-v-1cdc11a2">1.添加通知页面</view>
+          <view class="_view data-v-1cdc11a2">2.添加荣誉区 开发者页面</view>
+          <view class="_view data-v-1cdc11a2">3.添加首页头像图标</view>
+          <view class="_view data-v-1cdc11a2">即将上线:电子阅读器</view>
+          <view class="_view data-v-1cdc11a2">即将上线:音乐播放器</view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-1cdc11a2 cu-item text-blue">
+      <view class="_view data-v-1cdc11a2 bg-blue content shadow">
+        <view class="_view data-v-1cdc11a2 cu-capsule radius">
+          <view class="_view data-v-1cdc11a2 cu-tag bg-white text-blue">v1.0.4</view>
+          <view class="_view data-v-1cdc11a2 cu-tag line-white">2020-3-16</view>
+        </view>
+        <view class="_view data-v-1cdc11a2 margin-top-sm text-content">
+          <view class="_view data-v-1cdc11a2">1.增加音乐播放器</view>
+          <view class="_view data-v-1cdc11a2">2.首页导航添加音乐链接,可以直接播放音乐</view>
+          <view class="_view data-v-1cdc11a2">3.阅读器组件完善中</view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-1cdc11a2 cu-item text-blue">
+      <view class="_view data-v-1cdc11a2 bg-blue content shadow">
+        <view class="_view data-v-1cdc11a2 cu-capsule radius">
+          <view class="_view data-v-1cdc11a2 cu-tag bg-white text-blue">v1.0.5</view>
+          <view class="_view data-v-1cdc11a2 cu-tag line-white">2020-3-18</view>
+        </view>
+        <view class="_view data-v-1cdc11a2 margin-top-sm text-content">
+          <view class="_view data-v-1cdc11a2">1.阅读器组件体验版上线</view>
+          <view class="_view data-v-1cdc11a2">2.优化播放器组件</view>
+          <view class="_view data-v-1cdc11a2">3.添加教师入口页面</view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-1cdc11a2 cu-item text-blue">
+      <view class="_view data-v-1cdc11a2 bg-blue content shadow">
+        <view class="_view data-v-1cdc11a2 cu-capsule radius">
+          <view class="_view data-v-1cdc11a2 cu-tag bg-white text-blue">v1.0.6</view>
+          <view class="_view data-v-1cdc11a2 cu-tag line-white">2020-7-05</view>
+        </view>
+        <view class="_view data-v-1cdc11a2 margin-top-sm text-content">
+          <view class="_view data-v-1cdc11a2">修复音乐轮播无法跳转播放问题</view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-1cdc11a2 cu-item text-blue">
+      <view class="_view data-v-1cdc11a2 bg-blue content shadow">
+        <view class="_view data-v-1cdc11a2 cu-capsule radius">
+          <view class="_view data-v-1cdc11a2 cu-tag bg-white text-blue">v1.0.7</view>
+          <view class="_view data-v-1cdc11a2 cu-tag line-white">2021-03-30</view>
+        </view>
+        <view class="_view data-v-1cdc11a2 margin-top-sm text-content">
+          <view class="_view data-v-1cdc11a2">修复小程序接口问题，新功能即将上线</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

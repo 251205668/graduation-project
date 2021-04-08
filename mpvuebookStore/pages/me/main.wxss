@@ -1,0 +1,129 @@
+@import "../../common/vendor.wxss";
+
+.UCenter-bg.data-v-4faea238 {
+  background-image: url("https://cdn.nlark.com/yuque/0/2019/jpeg/223589/1551665278734-assets/web-upload/47c7dc58-b900-4e24-a1ac-ee8fdb9ada70.jpeg");
+  background-size: cover;
+  height: 550rpx;
+  display: flex;
+  justify-content: center;
+  padding-top: 40rpx;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  color: #3683d6;
+  font-weight: 400;
+  text-shadow: 0 0 6rpx rgba(0,0,0,0.3);
+}
+.title.data-v-4faea238 {
+  margin-top: 16rpx;
+}
+.user.data-v-4faea238 {
+  display: flex;
+  padding: 20rpx;
+}
+.user .avatar.data-v-4faea238 {
+  margin-top: 10rpx;
+}
+.user .userinfo.data-v-4faea238 {
+  margin-left: 36rpx;
+  display: flex;
+  margin-top: 26rpx;
+  vertical-align: top;
+  flex-direction: column;
+}
+.user .userinfo .userName.data-v-4faea238 {
+  color: #333;
+  font-weight: 400;
+  font-size: 30rpx;
+  line-height: 32rpx;
+}
+.user .userinfo .desc.data-v-4faea238 {
+  margin-top: 8rpx;
+  font-size: 24rpx;
+}
+.UCenter-bg text.data-v-4faea238 {
+  margin-top: 8rpx;
+  opacity: 0.8;
+}
+.UCenter-bg image.data-v-4faea238 {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+.UCenter-bg .gif-wave.data-v-4faea238 {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  mix-blend-mode: screen;
+  height: 100rpx;
+}
+._map.data-v-4faea238,
+.mapBox.data-v-4faea238 {
+  left: 0;
+  z-index: 99;
+  mix-blend-mode: screen;
+  height: 100rpx;
+}
+._map.data-v-4faea238,
+.mapBox.data-v-4faea238 {
+  width: 750rpx;
+  height: 300rpx;
+}
+.auth.data-v-62286cd3 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.auth .dialog.data-v-62286cd3 {
+  width: 540rpx;
+  height: 496rpx;
+  border-radius: 36rpx;
+  position: relative;
+  background: #f5f5f5;
+}
+.auth .dialog .info.data-v-62286cd3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.auth .dialog .info .image-wrapper.data-v-62286cd3 {
+  width: 148rpx;
+  height: 148rpx;
+  margin-top: 45rpx;
+}
+.auth .dialog .info .sub-title.data-v-62286cd3 {
+  margin-top: 36rpx;
+  font-size: 26rpx;
+  color: #999;
+  line-height: 37rpx;
+}
+.auth .dialog .info .desc.data-v-62286cd3 {
+  margin-top: 7rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #333;
+}
+.auth .dialog .login-button.data-v-62286cd3 {
+  position: absolute;
+  bottom: 80rpx;
+  color: #0081ff;
+  width: 100%;
+}
+.auth .dialog .cancel-button.data-v-62286cd3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #1cbbb4;
+  border-radius: 0 0 36rpx 36rpx;
+}

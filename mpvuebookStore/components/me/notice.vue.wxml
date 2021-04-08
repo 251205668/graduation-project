@@ -1,0 +1,58 @@
+<template name="3494d044">
+  <view class="_div data-v-07d9153d">
+    <view class="_view data-v-07d9153d cu-bar bg-white">
+      <view class="_view data-v-07d9153d action"><text class="_text data-v-07d9153d cuIcon-titles text-green"></text> <text class="_text data-v-07d9153d text-xl text-bold">2020-2月</text></view>
+    </view>
+    <view class="_view data-v-07d9153d cu-card article isCard">
+      <view class="_view data-v-07d9153d cu-item shadow">
+        <view class="_view data-v-07d9153d title">
+          <view class="_view data-v-07d9153d text-cut">东理悦读小程序上线了</view>
+        </view>
+        <view class="_view data-v-07d9153d content">
+          <image src="https://wpimg.wallstcn.com/bcce3734-0837-4b9f-9261-351ef384f75a.jpg?imageView2/2/h/440" mode="aspectFill" class="_image data-v-07d9153d"></image>
+          <view class="_view data-v-07d9153d desc">
+            <view class="_view data-v-07d9153d text-content">经过一个月的前端开发,小程序终于通过了审核,正式上线,该小程序免费用于阅读</view>
+            <view class="_view data-v-07d9153d">
+              <view class="_view data-v-07d9153d cu-tag bg-blue light sm round">上线</view>
+              <view class="_view data-v-07d9153d cu-tag bg-green light sm round">公测</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-07d9153d cu-card article isCard">
+      <view class="_view data-v-07d9153d cu-item shadow">
+        <view class="_view data-v-07d9153d title">
+          <view class="_view data-v-07d9153d text-cut">功能更新</view>
+        </view>
+        <view class="_view data-v-07d9153d content">
+          <image src="https://wpimg.wallstcn.com/bcce3734-0837-4b9f-9261-351ef384f75a.jpg?imageView2/2/h/440" mode="aspectFill" class="_image data-v-07d9153d"></image>
+          <view class="_view data-v-07d9153d desc">
+            <view class="_view data-v-07d9153d text-content">增加部分页面,即将上线阅读器和播放器</view>
+            <view class="_view data-v-07d9153d">
+              <view class="_view data-v-07d9153d cu-tag bg-blue light sm round">功能</view>
+              <view class="_view data-v-07d9153d cu-tag bg-green light sm round">公测</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-07d9153d cu-card article isCard">
+      <view class="_view data-v-07d9153d cu-item shadow">
+        <view class="_view data-v-07d9153d title">
+          <view class="_view data-v-07d9153d text-cut">功能更新</view>
+        </view>
+        <view class="_view data-v-07d9153d content">
+          <image src="https://wpimg.wallstcn.com/bcce3734-0837-4b9f-9261-351ef384f75a.jpg?imageView2/2/h/440" mode="aspectFill" class="_image data-v-07d9153d"></image>
+          <view class="_view data-v-07d9153d desc">
+            <view class="_view data-v-07d9153d text-content">增加部分页面,即将上线阅读器和播放器</view>
+            <view class="_view data-v-07d9153d">
+              <view class="_view data-v-07d9153d cu-tag bg-blue light sm round">功能</view>
+              <view class="_view data-v-07d9153d cu-tag bg-green light sm round">公测</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

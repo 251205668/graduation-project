@@ -1,0 +1,8 @@
+<template name="9f803f4a">
+  <view class="_div data-v-f8f7b558">
+    <view class="_view data-v-f8f7b558 paycode">
+      <image src="https://i.loli.net/2020/02/15/YKmowvrqgLXk7cS.jpg" class="_image data-v-f8f7b558 codeimg" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"></image>
+      <view class="_view data-v-f8f7b558 textview"><text class="_text data-v-f8f7b558 text">点击图片后长按识别赞赏码</text></view>
+    </view>
+  </view>
+</template>

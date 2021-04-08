@@ -1,0 +1,14 @@
+<template name="480c74ac">
+  <view class="_div data-v-1c47b157 user-info-wrapper">
+    <view class="_div data-v-1c47b157 user-info">
+      <view class="_div data-v-1c47b157 user-nick-name">{{userInfo.nickName}}</view>
+      <view class="_div data-v-1c47b157 user-read-time">您已经加入东理悦读{{readDay}}天</view>
+      <view class="_div data-v-1c47b157 user-avatar-wrapper">
+        <van-image class="_van-image data-v-1c47b157 user-avatar" width="40" height="40" lazy-load round src="{{userInfo.avatarUrl}}" fit="cover"></van-image>
+      </view>
+    </view>
+    <view class="_div data-v-1c47b157 user-extra">
+      <view class="_div data-v-1c47b157 user-extra-text">您的书架中共有 {{num}} 本好书</view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,12 @@
+<template name="216a5e4e">
+  <view class="_div data-v-9716025a search-box" bg-white>
+    <view class="_div data-v-9716025a search-box-wrapper" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+      <l-icon size="30" name="research" class="_l-icon data-v-9716025a research"></l-icon> <input ref="input" bindfocus="handleProxy" bindconfirm="handleProxy" bindinput="handleProxy" value="{{query}}" placeholder="{{hotSearch}}" class="_input data-v-9716025a input" data-eventid="{{'0'}}" data-comkey="{{$k}}" />
+      <l-icon wx:if="{{query.length>0}}" catchtap="handleProxy" size="30" name="delete" class="_l-icon data-v-9716025a delete" data-eventid="{{'1'}}" data-comkey="{{$k}}"></l-icon>
+      <van-dialog id="van-dialog" class="_van-dialog data-v-9716025a"></van-dialog>
+    </view>
+    <view class="_div data-v-9716025a search-box-button" wx:if="{{showbtn}}">
+      <l-button width="80" height="50" class="_l-button data-v-9716025a">搜索</l-button>
+    </view>
+  </view>
+</template>

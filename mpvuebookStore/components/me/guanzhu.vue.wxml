@@ -1,0 +1,20 @@
+<template name="55376860">
+  <view class="_div data-v-6aa8a5f7">
+    <view class="_div data-v-6aa8a5f7 cu-list menu-avatar">
+      <view class="_div data-v-6aa8a5f7 cu-item {{modalName == 'move-box-' + index ? 'move-cur' : ''}}" wx:key="index" key="{{index}}" bindtouchstart="handleProxy" bindtouchmove="handleProxy" bindtouchend="handleProxy" data-target="{{'move-box-' + index}}" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{mockdata}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-6aa8a5f7 cu-avatar round lg" style=" {{['background-image:' + ('url(' + item.avatar + ')') + ';']}}"></view>
+        <view class="_div data-v-6aa8a5f7 content">
+          <view class="_div data-v-6aa8a5f7 text-grey">{{item.name}}</view>
+          <view class="_div data-v-6aa8a5f7 text-gray text-sm"><text class="_text data-v-6aa8a5f7 cuIcon-profile text-blue  margin-right-xs"></text> {{item.info}}</view>
+        </view>
+        <view class="_div data-v-6aa8a5f7 action">
+          <view class="_div data-v-6aa8a5f7 text-grey text-xs">星期四</view>
+        </view>
+        <view class="_div data-v-6aa8a5f7 move">
+          <view class="_div data-v-6aa8a5f7 bg-grey item">私聊</view>
+          <view class="_div data-v-6aa8a5f7 bg-red item">删除</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

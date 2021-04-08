@@ -1,0 +1,8 @@
+<import src="/components/Home/Homebook.vue.wxml" /><template name="7814bf84">
+  <view class="_div data-v-655005bd type">
+    <view class="_div data-v-655005bd homebook"><template data="{{...$root[$kk+'0'], $root}}" is="0eeef8cd"></template></view>
+    <view class="_div data-v-655005bd loading" wx:if="{{!category.length}}">
+      <l-loading show="true" full-screen="true" size="large" type="change" class="_l-loading data-v-655005bd"></l-loading>
+    </view>
+  </view>
+</template>

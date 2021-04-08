@@ -1,0 +1,18 @@
+<import src="/components/base/search-box/search-box.vue.wxml" />
+<import src="/components/Search/Taggroup.vue.wxml" />
+<import src="/components/Search/suggest.vue.wxml" /><template name="25a3d1a6">
+  <view class="_div data-v-58cf654d search bg-white"><template ref="box" bindconfirm="handleProxy" binddeleted="handleProxy" bindonChange="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="216a5e4e"></template>
+    <view class="_div data-v-58cf654d tagGroup-wrapper" wx:if="{{hotkeys.length > 0 && !query}}"><template bindTobookdetail="handleProxy" bind_handle="handleProxy" title="热门搜索" btnText="换一批" data-eventid="{{'1'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'1'], $root}}" is="7474a301"></template></view>
+    <view class="_div data-v-58cf654d tagGroup-wrapper" wx:if="{{!query}}"><template bindaddinput="handleProxy" title="历史搜索" btnText="清空" bind_handle="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'2'], $root}}" is="7474a301"></template></view> <template wx:if="{{query && searchlist}}" data="{{...$root[$kk+'3'], $root}}" is="28772810"></template>
+    <van-dialog id="van-dialog" class="_van-dialog data-v-58cf654d"></van-dialog>
+    <view class="_div data-v-58cf654d loading" wx:if="{{IsLoading && searchlist && searchlist.book.length > 0}}">
+      <l-loadmore line="true" color="#3963bc" show="true" type="loading" loading-text="努力加载中" class="_l-loadmore data-v-58cf654d"></l-loadmore>
+    </view>
+    <view class="_div data-v-58cf654d full-load" hidden="{{!(!hotkeys)}}">
+      <l-loading type="flip" size="large" bg-color="#fff" z-index="2000" show="true" full-screen="true" class="_l-loading data-v-58cf654d"></l-loading>
+    </view>
+    <view class="_div data-v-58cf654d loading" wx:if="{{isBottom && searchlist && searchlist.book.length > 0}}">
+      <l-loadmore line="true" show="true" type="end" end-text="我也是有底线的(end)" class="_l-loadmore data-v-58cf654d"></l-loadmore>
+    </view>
+  </view>
+</template>

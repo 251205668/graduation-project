@@ -1,0 +1,12 @@
+<template name="388cf52f">
+  <view class="_div data-v-513bf963 detail-bottom">
+    <view class="_div data-v-513bf963 btn-wrapper">
+      <l-button width="320" height="80" bindtap="handleProxy" l-class="{{isInShelf ? 'Notexit':'exit'}}" shape="circle" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_l-button data-v-513bf963">
+        {{isInShelf ? '移除书架':'加入书架' }}
+      </l-button>
+    </view>
+    <view class="_div data-v-513bf963 btn-wrapper">
+      <l-button bindtap="handleProxy" width="320" height="80" l-class="read" shape="circle" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_l-button data-v-513bf963">立即阅读</l-button>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,18 @@
+@import "../../common/vendor.wxss";
+
+.paycode.data-v-f8f7b558 {
+  text-align: center;
+}
+.codeimg.data-v-f8f7b558 {
+  width: 593rpx;
+  height: 690rpx;
+}
+.codeimg.data-v-f8f7b558:active {
+  opacity: .8;
+}
+.text.data-v-f8f7b558 {
+  font-size: 40rpx;
+}
+.textview.data-v-f8f7b558 {
+  margin-top: 32rpx;
+}

@@ -1,0 +1,12 @@
+<import src="/components/detail/detail-desc/detail-desc.vue.wxml" />
+<import src="/components/detail/detail-count/detail-count.vue.wxml" />
+<import src="/components/detail/detail-catalogue/detail-catalogue.vue.wxml" />
+<import src="/components/detail/detail-bottom/detail-bottom.vue.wxml" /><template name="b22800e6">
+  <view class="_div data-v-4dbbdb06 detail bg-white"><template data="{{...$root[$kk+'0'], $root}}" is="f50b638a"></template> <template bindrate="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'1'], $root}}" is="2e00af79"></template> <template data="{{...$root[$kk+'2'], $root}}" is="9108058e"></template> <template bindhanldeShelf="handleProxy" bindreadbook="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'3'], $root}}" is="388cf52f"></template>
+    <van-dialog id="van-dialog" class="_van-dialog data-v-4dbbdb06"></van-dialog>
+    <l-message content="content" class="_l-message data-v-4dbbdb06"></l-message>
+    <view class="_div data-v-4dbbdb06 loading" hidden="{{!(!readers.length || !contents.length)}}">
+      <l-loading type="rotate" bg-color="#f3f3f3" z-index="900" show="true" full-screen="true" class="_l-loading data-v-4dbbdb06"></l-loading>
+    </view>
+  </view>
+</template>

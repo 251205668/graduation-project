@@ -1,0 +1,68 @@
+@import "../../common/vendor.wxss";
+
+.about.data-v-53acfe5f {
+  padding: 20rpx;
+}
+.about .team-wrapper.data-v-53acfe5f {
+  display: flex;
+  flex-direction: column;
+}
+.about .team-wrapper .item.data-v-53acfe5f {
+  margin-top: 46rpx;
+  display: flex;
+  flex-direction: column;
+}
+.about .team-wrapper .item .top.data-v-53acfe5f {
+  display: flex;
+}
+.about .team-wrapper .item .top .img-wrapper.data-v-53acfe5f {
+  flex: 0 0 180rpx;
+  border-radius: 50%;
+  margin-top: -16rpx;
+  width: 180rpx;
+  height: 180rpx;
+  box-shadow: 0 30rpx 20rpx rgba(0,0,0,0.2);
+}
+.about .team-wrapper .item .top .info.data-v-53acfe5f {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 200rpx;
+  justify-content: center;
+  padding-left: 40rpx;
+  background: rgba(255,255,255,0.4);
+}
+.about .team-wrapper .item .top .info .name.data-v-53acfe5f {
+  font-size: 32rpx;
+  font-weight: 500;
+  margin-bottom: 16rpx;
+  line-height: 40rpx;
+}
+.about .team-wrapper .item .top .info .sub-title.data-v-53acfe5f {
+  font-size: 24rpx;
+  line-height: 32rpx;
+}
+.about .team-wrapper .item .desc.data-v-53acfe5f {
+  margin-top: -8rpx;
+  padding: 50rpx;
+  font-size: 30rpx;
+  line-height: 52rpx;
+  min-height: 240rpx;
+  height: auto;
+  position: relative;
+}
+.about .team-wrapper .item .desc.data-v-53acfe5f:before {
+  content: "";
+  position: absolute;
+  left: 20rpx;
+  top: 15%;
+  width: 10rpx;
+  background: rgba(0,0,0,0.3);
+  opacity: 0.7;
+  height: 70%;
+}
+.content.data-v-53acfe5f {
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 40rpx;
+}

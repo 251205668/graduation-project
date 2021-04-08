@@ -1,0 +1,22 @@
+<template name="4db08363">
+  <view class="_div data-v-2d6ed848 search-list bg-white">
+    <view class="_div data-v-2d6ed848 search-list-wrapper">
+      <view class="_div data-v-2d6ed848 search-table" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{booklist}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-2d6ed848 image-wrapper">
+          <van-image width="47" height="68.5" lazy-load fit="cover" src="{{item.cover}}" class="_van-image data-v-2d6ed848"></van-image>
+        </view>
+        <view class="_div data-v-2d6ed848 book-desc">
+          <view class="_div data-v-2d6ed848 title">{{item.title}}</view>
+          <view class="_div data-v-2d6ed848 author">{{item.author}}</view>
+          <view class="_div data-v-2d6ed848 cate">{{item.categoryText}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-2d6ed848 loading" wx:if="{{showLoading && booklist.length > 0}}">
+      <l-loadmore line="true" color="#3963bc" show="true" type="loading" loading-text="努力加载中" class="_l-loadmore data-v-2d6ed848"></l-loadmore>
+    </view>
+    <view class="_div data-v-2d6ed848 loading" wx:if="{{showBottom && booklist.length > 0}}">
+      <l-loadmore line="true" show="true" type="end" end-text="我也是有底线的(end)" class="_l-loadmore data-v-2d6ed848"></l-loadmore>
+    </view>
+  </view>
+</template>

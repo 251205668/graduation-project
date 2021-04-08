@@ -1,0 +1,5 @@
+<template name="edb3db56">
+  <view class="_div data-v-142c0a6e tag-wrapper" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+    <view class="_div data-v-142c0a6e text">{{text}}</view>
+  </view>
+</template>

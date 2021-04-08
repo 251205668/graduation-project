@@ -1,0 +1,3 @@
+<import src="/components/classify/classify.vue.wxml" /><template name="45968ab6">
+  <view class="_div data-v-6914f12f"><template data="{{...$root[$kk+'0'], $root}}" is="7814bf84"></template></view>
+</template>

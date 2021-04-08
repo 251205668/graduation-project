@@ -1,0 +1,12 @@
+<template name="f50b638a">
+  <view class="_div data-v-7773fd2f detail-desc">
+    <view class="_div data-v-7773fd2f img-wrapper">
+      <van-image width="108" height="157" src="{{book.cover}}" lazy-load fit="cover" class="_van-image data-v-7773fd2f"></van-image>
+    </view>
+    <view class="_div data-v-7773fd2f desc">
+      <view class="_div data-v-7773fd2f title">{{book.title}}</view>
+      <view class="_div data-v-7773fd2f author">{{book.author}}</view>
+      <view class="_div data-v-7773fd2f sub-title">{{book.categoryText}}</view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,43 @@
+<import src="/components/base/image-view/image-view.vue.wxml" /><template name="0eeef8cd">
+  <view class="_div data-v-4aafa206 home-book {{linearStl}}" ref="homeBook">
+    <view class="_div data-v-4aafa206 home-book-header" wx:if="{{showTitle}}">{{title}}</view>
+    <view class="_div data-v-4aafa206 home-book-content">
+      <view class="_div data-v-4aafa206 home-book-row" wx:key="index" key="{{index}}" wx:for="{{bookData}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-4aafa206 home-book-col" wx:key="index1" key="{{index1}}" wx:for="{{item}}" wx:for-index="index1" wx:for-item="book" style=" {{('flex:' + ('0 0 ' + 100 / col + '%') + ';')}}">
+          <view class="_div data-v-4aafa206 home-book-wrapper" wx:if="{{ Mode==='row'|| Mode==='col'}}" style=" {{('flex-direction:' + (Mode === 'col' ? 'row' : 'column') + ';')}}">
+            <van-image bindtap="handleProxy" wx:if="{{Mode === 'row' && colStyle}}" width="101" height="147" fit="cover" lazy-load src="{{book.cover}}" data-eventid="{{'0_'+index+'-'+index1}}" data-comkey="{{$k}}" class="_van-image data-v-4aafa206"></van-image>
+            <van-image bindtap="handleProxy" wx:if="{{Mode === 'row' && !colStyle}}" width="68" height="99" fit="cover" lazy-load src="{{book.cover}}" data-eventid="{{'1_'+index+'-'+index1}}" data-comkey="{{$k}}" class="_van-image data-v-4aafa206"></van-image>
+            <van-image bindtap="handleProxy" wx:if="{{Mode === 'col'}}" width="64" height="88" fit="cover" lazy-load src="{{book.cover}}" data-eventid="{{'2_'+index+'-'+index1}}" data-comkey="{{$k}}" class="_van-image data-v-4aafa206"></van-image>
+            <view class="_div data-v-4aafa206 book-title-wrapper book-title-row" wx:if="{{Mode === 'row'}}">
+              <view class="_div data-v-4aafa206 book-title">
+                {{book.title}}
+              </view>
+            </view>
+            <view class="_div data-v-4aafa206 book-title-wrapper book-title-col" wx:if="{{Mode === 'col'}}">
+              <view class="_div data-v-4aafa206 book-title">
+                {{book.title}}
+              </view>
+              <view class="_div data-v-4aafa206 book-author">
+                {{book.author}}
+              </view>
+              <view class="_div data-v-4aafa206 book-cate">
+                {{book.categoryText}}
+              </view>
+            </view>
+          </view>
+          <view class="_div data-v-4aafa206 category-wrappper" catchtap="handleProxy" wx:if="{{Mode==='cate'}}" data-eventid="{{'3_'+index+'-'+index1}}" data-comkey="{{$k}}">
+            <view class="_div data-v-4aafa206 cate-text">{{book.text}}</view>
+            <view class="_div data-v-4aafa206 cate-num">{{book.num}}本书</view>
+            <view class="_div data-v-4aafa206 image-wrapper">
+              <view class="_div data-v-4aafa206 img1"><template data="{{...$root[$kk+'3_'+index+'-'+index1], $root}}" is="ea77cf8e"></template></view>
+              <view class="_div data-v-4aafa206 img2"><template data="{{...$root[$kk+'4_'+index+'-'+index1], $root}}" is="ea77cf8e"></template></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-4aafa206 home-book-footer" wx:if="{{showBtn}}">
+      <l-button shape="semicircle" bindtap="handleProxy" color="#ffffff" height="82" size="large" plain="true" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_l-button data-v-4aafa206">{{btnText}}</l-button>
+    </view>
+  </view>
+</template>

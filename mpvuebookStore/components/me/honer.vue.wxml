@@ -1,0 +1,36 @@
+<template name="449a4678">
+  <view class="_div data-v-53acfe5f honer">
+    <view class="_div data-v-53acfe5f cu-bar justify-center bg-white">
+      <view class="_div data-v-53acfe5f action sub-title"><text class="_text data-v-53acfe5f text-xl text-bold text-green">开发贡献</text> <text class="_text data-v-53acfe5f bg-green" style="width:2rem"></text></view>
+    </view>
+    <view class="_div data-v-53acfe5f about">
+      <view class="_div data-v-53acfe5f team-wrapper">
+        <view class="_div data-v-53acfe5f item" wx:key="index" key="{{index}}" wx:for="{{teamdata}}" wx:for-index="index" wx:for-item="item">
+          <view class="_div data-v-53acfe5f top shadow bg-white">
+            <view class="_div data-v-53acfe5f img-wrapper shadow ">
+              <van-image round src="{{item.avatar}}" lazy-load width="90" height="90" cover="fit" class="_van-image data-v-53acfe5f"></van-image>
+            </view>
+            <view class="_div data-v-53acfe5f info">
+              <view class="_div data-v-53acfe5f name text-black">{{item.name}}</view>
+              <view class="_div data-v-53acfe5f sub-title text-gray">{{item.info}}</view>
+            </view>
+          </view>
+          <view class="_div data-v-53acfe5f desc bg-blue text-content">{{item.desc}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-53acfe5f cu-bar justify-center bg-white">
+      <view class="_div data-v-53acfe5f action sub-title"><text class="_text data-v-53acfe5f text-xl text-bold text-blue">荣誉区</text> <text class="_text data-v-53acfe5f bg-blue" style="width:2rem"></text></view>
+    </view>
+    <view class="_div data-v-53acfe5f content">
+      <van-collapse value="{{activeName}}" bindchange="handleProxy" accordion data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_van-collapse data-v-53acfe5f">
+        <van-collapse-item title="中国计算机设计大赛国家二等奖" name="1" class="_van-collapse-item data-v-53acfe5f">
+          <van-image src="https://image.yangxiansheng.top/img/e0f1c9f2fc227f9b634f924cd33762e.jpg?imglist" cover="fit" width="375" height="120" class="_van-image data-v-53acfe5f"></van-image>
+        </van-collapse-item>
+        <van-collapse-item title="江西省计算机作品赛三等奖" name="2" class="_van-collapse-item data-v-53acfe5f">
+          <van-image src="https://image.yangxiansheng.top/img/4f931bd031ed2eddced0315ae22eea2.jpg?imglist" cover="fit" width="375" height="120" class="_van-image data-v-53acfe5f"></van-image>
+        </van-collapse-item>
+      </van-collapse>
+    </view>
+  </view>
+</template>

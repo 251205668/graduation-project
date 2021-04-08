@@ -1,0 +1,59 @@
+<template name="409bea51">
+  <scroll-view scroll-y class="_scroll-view data-v-4faea238 scrollPage">
+    <view class="_view data-v-4faea238 UCenter-bg">
+      <image src="https://i.loli.net/2020/02/17/qKnZz13REVmvP6x.png" class="_image data-v-4faea238 png" mode="widthFix"></image>
+      <view class="_view data-v-4faea238 text-xl title">东理悦读 <text class="_text data-v-4faea238 text-df">v1.0.6</text></view>
+      <image src="https://raw.githubusercontent.com/weilanwl/ColorUI/master/demo/images/wave.gif" mode="scaleToFill" class="_image data-v-4faea238 gif-wave"></image>
+    </view>
+    <view class="_view data-v-4faea238 cu-list menu margin-bottom-xl shadow-lg radius">
+      <view class="_view data-v-4faea238 cu-item" wx:if="{{!showlog}}">
+        <view class="_view data-v-4faea238 content user">
+          <view class="_div data-v-4faea238 cu-avatar radius lg avatar " ref="avatar" style=" {{('background-image:' + ('url' + '(' + userInformation.avatarUrl + ')') + ';')}}">
+            <view class="_view data-v-4faea238 cu-tag badge {{userInformation.gender === 2 ? 'cuIcon-female bg-pink' : 'cuIcon-male bg-blue'}}"></view>
+          </view>
+          <view class="_div data-v-4faea238 userinfo">
+            <view class="_div data-v-4faea238 userName">{{userInformation.nickName}}</view>
+            <view class="_div data-v-4faea238 desc text-grey">阅读等级:书虫一枚</view>
+          </view>
+        </view>
+      </view>
+      <view class="_view data-v-4faea238 us-item" wx:if="{{showlog}}">
+        <view class="_view data-v-4faea238 cu-bar btn-group"><button bindgetuserinfo="handleProxy" open-type="getUserInfo" class="_button data-v-4faea238 cu-btn text-blue line-blue shadow" data-eventid="{{'0'}}" data-comkey="{{$k}}">绑定账号</button></view>
+      </view>
+      <l-toast class="_l-toast data-v-4faea238"></l-toast>
+    </view>
+    <view class="_view data-v-4faea238 cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+      <view class="_view data-v-4faea238 cu-item arrow" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+        <view class="_view data-v-4faea238 content" hover-class="none"><text class="_text data-v-4faea238 cuIcon-info text-blue"></text> <text class="_text data-v-4faea238 text-grey">关于</text></view>
+      </view>
+      <view class="_view data-v-4faea238 cu-item arrow" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+        <view class="_view data-v-4faea238 content" hover-class="none"><text class="_text data-v-4faea238 cuIcon-notificationfill text-purple"></text> <text class="_text data-v-4faea238 text-grey">通告</text></view>
+      </view>
+      <view class="_view data-v-4faea238 cu-item arrow">
+        <view class="_view data-v-4faea238 content" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}"><text class="_text data-v-4faea238 cuIcon-favorfill text-red"></text> <text class="_text data-v-4faea238 text-grey">个人收藏</text></view>
+      </view>
+      <view class="_view data-v-4faea238 cu-item arrow" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}">
+        <view class="_view data-v-4faea238 content"><text class="_text data-v-4faea238 cuIcon-formfill text-cyan"></text> <text class="_text data-v-4faea238 text-grey">日志</text></view>
+      </view>
+      <view class="_view data-v-4faea238 cu-item arrow">
+        <view class="_view data-v-4faea238 content" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}"><text class="_text data-v-4faea238 cuIcon-profile text-blue"></text> <text class="_text data-v-4faea238 text-grey">教师入口</text></view>
+      </view>
+      <view class="_view data-v-4faea238 cu-item arrow">
+        <view class="_view data-v-4faea238 content" bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}"><text class="_text data-v-4faea238 cuIcon-like text-pink"></text> <text class="_text data-v-4faea238 text-grey">我的关注</text></view>
+      </view>
+      <view class="_view data-v-4faea238 cu-item arrow"><button class="_button data-v-4faea238 cu-btn content" open-type="feedback"><text class="_text data-v-4faea238 cuIcon-writefill text-orange"></text> <text class="_text data-v-4faea238 text-grey">意见反馈</text></button></view>
+      <view class="_view data-v-4faea238 cu-item arrow">
+        <view class="_view data-v-4faea238 content" bindtap="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}"><text class="_text data-v-4faea238 cuIcon-upstage text-yellow"></text> <text class="_text data-v-4faea238 text-grey">荣誉</text></view>
+      </view>
+      <view class="_view data-v-4faea238 cu-item arrow" bindtap="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}">
+        <view class="_view data-v-4faea238 content" hover-class="none"><text class="_text data-v-4faea238 cuIcon-vipcard text-brown"></text> <text class="_text data-v-4faea238 text-grey">赞赏作者</text></view>
+      </view>
+      <view class="_view data-v-4faea238 cu-item arrow" bindtap="handleProxy" data-eventid="{{'9'}}" data-comkey="{{$k}}">
+        <view class="_view data-v-4faea238 content" hover-class="none"><text class="_text data-v-4faea238 cuIcon-clothes text-pink"></text> <text class="_text data-v-4faea238 text-grey">个性换肤</text></view>
+      </view>
+      <view class="_view data-v-4faea238 cu-item arrow"><button class="_button data-v-4faea238 cu-btn content" open-type="share"><text class="_text data-v-4faea238 cuIcon-share text-red"></text> <text class="_text data-v-4faea238 text-grey">分享</text></button></view>
+      <l-message content="content" class="_l-message data-v-4faea238"></l-message>
+      <van-dialog id="van-dialog" class="_van-dialog data-v-4faea238"></van-dialog>
+    </view>
+  </scroll-view>
+</template>

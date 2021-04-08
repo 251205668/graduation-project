@@ -1,0 +1,30 @@
+<import src="/components/base/search-box/search-box.vue.wxml" />
+<import src="/components/Home/Homecard.vue.wxml" />
+<import src="/components/Home/Homebanner.vue.wxml" />
+<import src="/components/Home/HomebookR.vue.wxml" />
+<import src="/components/Home/HomebookF.vue.wxml" />
+<import src="/components/Home/HomebookH.vue.wxml" />
+<import src="/components/Home/HomebookC.vue.wxml" /><template name="677f6f32">
+  <view class="_div data-v-21cf3d5a index">
+    <view class="_div data-v-21cf3d5a home" bindtap="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}">
+      <view class="_div data-v-21cf3d5a top">
+        <view wx:if="{{!currentSong.id}}" class="_div data-v-21cf3d5a muisc-pic">
+          <van-image bindtap="handleProxy" width="50" height="50" fit="cover" round lazy-load src="https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif?imageView2/1/w/80/h/80" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_van-image data-v-21cf3d5a"></van-image>
+        </view>
+        <view wx:else class="_div data-v-21cf3d5a muisc-pic">
+          <van-image bindtap="handleProxy" width="50" height="50" fit="cover" round lazy-load src="{{currentSong.picUrl}}" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_van-image data-v-21cf3d5a"></van-image>
+        </view>
+        <view class="_div data-v-21cf3d5a search"><template bindoncatchclick="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'2'], $root}}" is="216a5e4e"></template></view>
+      </view>
+      <view class="_div data-v-21cf3d5a Homecard"><template bindBookdetail="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'3'], $root}}" is="d2166518"></template></view> <template data="{{...$root[$kk+'4'], $root}}" is="f0acbee0"></template>
+      <view class="_div data-v-21cf3d5a book-wrapper"><template bindToDetail="handleProxy" bindonMoreclick="handleProxy" linearBg mode="row" btnText="换一批" data-eventid="{{'4'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'5'], $root}}" is="5e6a8b56"></template></view>
+      <view class="_div data-v-21cf3d5a book-wrapper"><template bindToDetail="handleProxy" bindonMoreclick="handleProxy" mode="col" btnText="换一批" data-eventid="{{'5'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'6'], $root}}" is="5fbcbf6e"></template></view>
+      <view class="_div data-v-21cf3d5a book-wrapper"><template bindToDetail="handleProxy" bindonMoreclick="handleProxy" mode="row" btnText="换一批" data-eventid="{{'6'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'7'], $root}}" is="5f84616a"></template></view>
+      <view class="_div data-v-21cf3d5a book-wrapper"><template bindonMoreclick="handleProxy" btnText="查看全部" data-eventid="{{'7'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'8'], $root}}" is="60114c74"></template></view>
+    </view>
+    <view class="_div data-v-21cf3d5a loading" wx:if="{{!recommend.length > 0 && !freeread.length > 0 && !hotBook.length > 0 && !category.length > 0 }}">
+      <l-loading show="true" type="flash" size="large" class="_l-loading data-v-21cf3d5a"></l-loading>
+    </view>
+    <van-toast id="van-toast" class="_van-toast data-v-21cf3d5a"></van-toast>
+  </view>
+</template>

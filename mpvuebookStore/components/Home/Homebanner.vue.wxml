@@ -1,0 +1,10 @@
+<template name="f0acbee0">
+  <view class="_div data-v-543640ee swipper-wrapper">
+    <swiper class="_swiper data-v-543640ee swipper" circular="true" autoplay="true" interval="5000" duration="500">
+      <swiper-item bindtap="handleProxy" wx:key="index" key="{{index}}" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{swiperList}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-543640ee">
+        <image class="_img data-v-543640ee swipper-item" mode="widthFix" src="{{item.imageUrl}}"></image>
+      </swiper-item>
+    </swiper>
+    <van-toast id="van-toast" class="_van-toast data-v-543640ee"></van-toast>
+  </view>
+</template>

@@ -1,0 +1,30 @@
+@import "../../common/vendor.wxss";
+
+.about .header.data-v-4ca680dc {
+  position: relative;
+  width: 100%;
+  height: 400rpx;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .header .background.data-v-4ca680dc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.about .header .logo.data-v-4ca680dc {
+  position: relative;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  z-index: 3;
+  opacity: 0.9;
+}
