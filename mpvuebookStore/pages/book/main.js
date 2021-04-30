@@ -143,7 +143,7 @@ if (false) {(function () {
     wx.setNavigationBarTitle({
       title: this.$route.query.title
     });
-    this.url = 'https://ecutread.yangxiansheng.top/reader/' + this.$route.query.fileName;
+    this.url = 'http://localhost:8080/#/reader/' + this.$route.query.fileName;
   },
 
 

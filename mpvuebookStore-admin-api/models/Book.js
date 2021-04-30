@@ -6,7 +6,7 @@ const {
   UPLOAD_URL,
   UPLOAD_PATH,
   UPDATE_TYPE_FROM_WEB,
-  OLD_UPLOAD_URL
+  OLD_UPLOAD_URL,
 } = require('../utils/constant')
 
 class Book {
@@ -22,7 +22,7 @@ class Book {
     const {
       destination: des, // 文件本地存储目录
       filename, // 文件名称
-      mimetype = MIME_TYPE_EPUB // 文件资源类型
+      mimetype = MIME_TYPE_EPUB, // 文件资源类型
     } = file
     const suffix = mimetype === MIME_TYPE_EPUB ? '.epub' : ''
     const oldBookPath = `${des}/${filename}`
@@ -70,7 +70,8 @@ class Book {
     this.createUser = data.username
     this.createDt = new Date().getTime()
     this.updateDt = new Date().getTime()
-    this.updateType = data.updateType === 0 ? data.updateType : UPDATE_TYPE_FROM_WEB
+    this.updateType =
+      data.updateType === 0 ? data.updateType : UPDATE_TYPE_FROM_WEB
     this.contents = data.contents
   }
 
@@ -81,10 +82,10 @@ class Book {
         reject(new Error('电子书路径不存在'))
       }
       const epub = new Epub(bookPath)
-      epub.on('error', err => {
+      epub.on('error', (err) => {
         reject(err)
       })
-      epub.on('end', err => {
+      epub.on('end', (err) => {
         if (err) {
           reject(err)
         } else {
@@ -95,7 +96,7 @@ class Book {
             creator,
             creatorFileAs,
             publisher,
-            cover
+            cover,
           } = epub.metadata
           // title = ''
           if (!title) {
@@ -127,7 +128,7 @@ class Book {
                   this.contentsTree = chapterTree
                   epub.getImage(cover, handleGetImage) // 获取封面图片
                 })
-                .catch(err => reject(err)) // 解析目录
+                .catch((err) => reject(err)) // 解析目录
             } catch (e) {
               reject(e)
             }
@@ -143,8 +144,8 @@ class Book {
     const AdmZip = require('adm-zip')
     const zip = new AdmZip(Book.genPath(this.path)) // 解析文件路径
     zip.extractAllTo(
-      /*target path*/Book.genPath(this.unzipPath),
-      /*overwrite*/true
+      /*target path*/ Book.genPath(this.unzipPath),
+      /*overwrite*/ true
     )
   }
 
@@ -164,15 +165,17 @@ class Book {
      * @returns {*[]}
      */
     function flatten(array) {
-      return [].concat(...array.map(item => {
-        if (item.navPoint && item.navPoint.length) {
-          return [].concat(item, ...flatten(item.navPoint))
-        } else if (item.navPoint) {
-          return [].concat(item, item.navPoint)
-        } else {
-          return item
-        }
-      }))
+      return [].concat(
+        ...array.map((item) => {
+          if (item.navPoint && item.navPoint.length) {
+            return [].concat(item, ...flatten(item.navPoint))
+          } else if (item.navPoint) {
+            return [].concat(item, item.navPoint)
+          } else {
+            return item
+          }
+        })
+      )
     }
 
     /**
@@ -183,7 +186,7 @@ class Book {
      * @param pid
      */
     function findParent(array, level = 0, pid = '') {
-      return array.map(item => {
+      return array.map((item) => {
         item.level = level
         item.pid = pid
         if (item.navPoint && item.navPoint.length) {
@@ -201,57 +204,66 @@ class Book {
     } else {
       const fileName = this.fileName
       return new Promise((resolve, reject) => {
-        const ncxFilePath = Book.genPath(`${this.unzipPath}/${getNcxFilePath()}`) // 获取ncx文件路径
+        const ncxFilePath = Book.genPath(
+          `${this.unzipPath}/${getNcxFilePath()}`
+        ) // 获取ncx文件路径
         const xml = fs.readFileSync(ncxFilePath, 'utf-8') // 读取ncx文件
         // 将ncx文件从xml转为json
-        xml2js(xml, {
-          explicitArray: false, // 设置为false时，解析结果不会包裹array
-          ignoreAttrs: false  // 解析属性
-        }, function(err, json) {
-          if (!err) {
-            const navMap = json.ncx.navMap // 获取ncx的navMap属性
-            if (navMap.navPoint) { // 如果navMap属性存在navPoint属性，则说明目录存在
-              navMap.navPoint = findParent(navMap.navPoint)
-              const newNavMap = flatten(navMap.navPoint) // 将目录拆分为扁平结构
-              const chapters = []
-              epub.flow.forEach((chapter, index) => { // 遍历epub解析出来的目录
-                // 如果目录大于从ncx解析出来的数量，则直接跳过
-                if (index + 1 > newNavMap.length) {
-                  return
-                }
-                const nav = newNavMap[index] // 根据index找到对应的navMap
-                chapter.text = `${UPLOAD_URL}/unzip/${fileName}/${chapter.href}` // 生成章节的URL
-                // console.log(`${JSON.stringify(navMap)}`)
-                if (nav && nav.navLabel) { // 从ncx文件中解析出目录的标题
-                  chapter.label = nav.navLabel.text || ''
-                } else {
-                  chapter.label = ''
-                }
-                chapter.level = nav.level
-                chapter.pid = nav.pid
-                chapter.navId = nav['$'].id
-                chapter.fileName = fileName
-                chapter.order = index + 1
-                chapters.push(chapter)
-              })
-              const chapterTree = []
-              chapters.forEach(c => {
-                c.children = []
-                if (c.pid === '') {
-                  chapterTree.push(c)
-                } else {
-                  const parent = chapters.find(_ => _.navId === c.pid)
-                  parent.children.push(c)
-                }
-              }) // 将目录转化为树状结构
-              resolve({ chapters, chapterTree })
+        xml2js(
+          xml,
+          {
+            explicitArray: false, // 设置为false时，解析结果不会包裹array
+            ignoreAttrs: false, // 解析属性
+          },
+          function (err, json) {
+            if (!err) {
+              const navMap = json.ncx.navMap // 获取ncx的navMap属性
+              if (navMap.navPoint) {
+                // 如果navMap属性存在navPoint属性，则说明目录存在
+                navMap.navPoint = findParent(navMap.navPoint)
+                const newNavMap = flatten(navMap.navPoint) // 将目录拆分为扁平结构
+                const chapters = []
+                epub.flow.forEach((chapter, index) => {
+                  // 遍历epub解析出来的目录
+                  // 如果目录大于从ncx解析出来的数量，则直接跳过
+                  if (index + 1 > newNavMap.length) {
+                    return
+                  }
+                  const nav = newNavMap[index] // 根据index找到对应的navMap
+                  chapter.text = `${UPLOAD_URL}/unzip/${fileName}/${chapter.href}` // 生成章节的URL
+                  // console.log(`${JSON.stringify(navMap)}`)
+                  if (nav && nav.navLabel) {
+                    // 从ncx文件中解析出目录的标题
+                    chapter.label = nav.navLabel.text || ''
+                  } else {
+                    chapter.label = ''
+                  }
+                  chapter.level = nav.level
+                  chapter.pid = nav.pid
+                  chapter.navId = nav['$'].id
+                  chapter.fileName = fileName
+                  chapter.order = index + 1
+                  chapters.push(chapter)
+                })
+                const chapterTree = []
+                chapters.forEach((c) => {
+                  c.children = []
+                  if (c.pid === '') {
+                    chapterTree.push(c)
+                  } else {
+                    const parent = chapters.find((_) => _.navId === c.pid)
+                    parent.children.push(c)
+                  }
+                }) // 将目录转化为树状结构
+                resolve({ chapters, chapterTree })
+              } else {
+                reject(new Error('目录解析失败，navMap.navPoint error'))
+              }
             } else {
-              reject(new Error('目录解析失败，navMap.navPoint error'))
+              reject(err)
             }
-          } else {
-            reject(err)
           }
-        })
+        )
       })
     }
   }
@@ -275,7 +287,7 @@ class Book {
       originalName: this.originalName,
       rootFile: this.rootFile,
       fileName: this.fileName,
-      filePath: this.filePath
+      filePath: this.filePath,
     }
   }
 
@@ -298,7 +310,7 @@ class Book {
       createDt: this.createDt,
       updateDt: this.updateDt,
       category: this.category || 99,
-      categoryText: this.categoryText || '自定义'
+      categoryText: this.categoryText || '自定义',
     }
   }
 
@@ -354,9 +366,9 @@ class Book {
     } else {
       if (book.cover) {
         if (book.cover.startsWith('/')) {
-          return `${UPLOAD_URL}${book.cover}`
+          return `http://localhost/upload/admin-upload-ebook${book.cover}`
         } else {
-          return `${UPLOAD_URL}/${book.cover}`
+          return `http://localhost/upload/admin-upload-ebook/${book.cover}`
         }
       } else {
         return null

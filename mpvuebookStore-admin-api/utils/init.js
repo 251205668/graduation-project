@@ -1,5 +1,5 @@
 const fs = require('fs')
-const { UPLOAD_PATH } = require('../utils/constant')
+const { UPLOAD_PATH } = require('./constant')
 
 function init() {
   const dir = `${UPLOAD_PATH}/book`
